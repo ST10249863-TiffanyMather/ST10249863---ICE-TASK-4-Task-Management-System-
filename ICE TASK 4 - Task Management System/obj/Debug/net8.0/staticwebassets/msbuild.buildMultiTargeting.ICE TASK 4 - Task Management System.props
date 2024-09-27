@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ICE TASK 4 - Task Management System.props" />
+</Project>

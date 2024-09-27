@@ -1,0 +1,21 @@
+﻿@model ICE_TASK_4___Task_Management_System.Models.TaskModel
+
+<h2>Delete Task</h2>
+
+<p>Are you sure you want to delete this task?</p>
+<dl class="dl-horizontal">
+    <dt>Title</dt>
+    <dd>@Model.Title</dd>
+
+    <dt>Description</dt>
+    <dd>@Model.Description</dd>
+
+    <dt>Deadline</dt>
+    <dd>@Model.Deadline.ToShortDateString()</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+<a href="/Task/Index">Cancel</a>
